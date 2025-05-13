@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O Sussurro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="ghost-loader">
+    <audio id="ghost-audio" preload="auto">
+      <source src="assets/som.mp3" type="audio/mpeg">
+    </audio>
+    <svg width="100" height="100" viewBox="0 0 100 100" class="loader-logo" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="48" stroke="#d72638" stroke-width="4"/>
+      <path d="M35 40 C45 30, 55 30, 65 40" stroke="#d72638" stroke-width="4" fill="none"/>
+      <path d="M35 60 C45 70, 55 70, 65 60" stroke="#d72638" stroke-width="4" fill="none"/>
+      <circle cx="40" cy="50" r="4" fill="#d72638" class="eye eye-left"/>
+      <circle cx="60" cy="50" r="4" fill="#d72638" class="eye eye-right"/>
+    </svg>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="ghost-header">
+    <div class="ghost-container">
+      <div class="logo-nav">
+        <svg width="36" height="36" viewBox="0 0 100 100" class="logo-animated" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" stroke="#d72638" stroke-width="4"/>
+          <path d="M35 40 C45 30, 55 30, 65 40" stroke="#d72638" stroke-width="4" fill="none"/>
+          <path d="M35 60 C45 70, 55 70, 65 60" stroke="#d72638" stroke-width="4" fill="none"/>
+          <circle cx="40" cy="50" r="4" fill="#d72638"/>
+          <circle cx="60" cy="50" r="4" fill="#d72638"/>
+        </svg>
+        <span class="logo-text glitch">Ghost Sensei</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>A porta que o marketing brasileiro finge que não existe… está aberta.</h1>
+      <p class="subtitle">E o pagamento é em dólar.</p>
+      <a href="#comprar" class="cta-button">QUERO O SUSSURRO AGORA</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PRINCIPAL -->
+  <section class="main" id="comprar">
+    <h2>A VERDADE QUE NINGUÉM ESTÁ TE CONTANDO</h2>
+    <p>O que você vai acessar agora não é um curso.<br />
+    É um <strong>ritual de iniciação</strong> no mercado mais silencioso e lucrativo da internet.</p>
+    <ul>
+      <li>– Nenhuma fórmula milagrosa</li>
+      <li>– Nenhum método mágico</li>
+      <li>– Só a realidade nua, suja e absurdamente rentável</li>
+    </ul>
+    <p>Enquanto você tenta crescer no Instagram…<br />
+    tem gente ganhando $4.000+ <strong>com operações que ninguém vê.</strong></p>
+
+    <h2>O QUE VOCÊ VAI DESCOBRIR</h2>
+    <ul>
+      <li>🔥 Por que o mercado adulto vai explodir no Brasil</li>
+      <li>🔍 Como funciona a estrutura das agências de OF/Privacy/Twitter/Reddit</li>
+      <li>🧠 Como pessoas comuns viram “gerentes de desejo”</li>
+      <li>💼 O modelo de operação que pode ser montado com R$0</li>
+    </ul>
+
+    <h2>BÔNUS EXCLUSIVO</h2>
+    <p><strong>📜 3 Scripts Reais de Abordagem de Modelos</strong></p>
+
+    <h2>QUEM DEVE ENTRAR</h2>
+    <p>Quem sente que tem algo acontecendo no digital e quer dominar antes da multidão.</p>
+
+    <h2>QUEM DEVE FICAR FORA</h2>
+    <p>Curiosos, moralistas e seguidores de “conteúdo de valor”.</p>
+
+    <div class="cta-area">
+      <h2>OFERTA: O SUSSURRO</h2>
+      <p><strong>Do Zero ao Setup: O Ritual de Iniciação no Mercado Adulto</strong></p>
+      <ul>
+        <li>Aula exclusiva com bastidores da operação</li>
+        <li>PDF visual com mapa completo</li>
+        <li>3 scripts de abordagem real</li>
+        <li>Acesso imediato + vitalício</li>
+        <li>Link pro próximo nível (Ghost Management)</li>
+      </ul>
+      <p><strong>🔥 Preço promocional: R$47</strong> (ou R$97)<br />⏳ Oferta ativa por tempo limitado</p>
+      <a href="#" class="cta-button">LIBERAR ACESSO</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Você não precisa confiar em mim. Confia na tensão que está sentindo agora.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('ghost-audio');
+      if (audio) {
+        audio.volume = 0.7;
+        audio.play().catch(() => {});
+      }
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+      }, 2500);
+    });
+  </script>
+
+</body>
+</html>
